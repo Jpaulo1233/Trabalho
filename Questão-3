@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trabalho 1</title>
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <table border="1">
+        <tr>
+          <td>Produto</td>
+          <td>Preço</td>
+          <td>Quantidade em Estoque</td>  
+        </tr>
+        <td>Notebook Gamer</td>
+         <td>R$ 20,000</td>
+          <td>20</td>
+          <tr>
+            <td>PS6</td>
+            <td>R$ 10,000</td>
+            <td>3</td>
+          </tr>
+          <td>XBOX ONE</td>
+          <td>R$ 8,000</td>
+          <td>10</td>
+    </table>
+<h2>Formulário de Pedido</h2>
+          <form action="/submit_form" method="post">
+        <label for="name">Nome do Cliente:</label><br>
+        <input type="text" id ="cliente" name="cliente" required><br><br>
+
+        <label for="produto">Produto Desejado:</label><br>
+        <select id="produto"name="name"><br><br>
+            <option value="Notebook Gamer">Notebook</option>
+            <option value="PS6">PS6</option>
+            <option value="XBOX ONE">XBOX ONE</option>
+        </select><br><br>
+        <label for="quantidade">Quantidade:</label><br>
+        <input type="number" id="quantidade" name="quantidade" min="1" required><br>
+        <input type="submit" value="Enviar Pedido">
+    </form>
+</body>
+</html>
